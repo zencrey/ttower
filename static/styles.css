@@ -1,0 +1,122 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(to right, #4a90e2, #7b4397);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Sections (Full Screen) */
+.section,
+.hero {
+  height: 100vh; /* Each section takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+/* Other Sections */
+.aim {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+.works {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: white;
+}
+
+.stacks {
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  color: white;
+}
+
+.contact {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+/* Form */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}

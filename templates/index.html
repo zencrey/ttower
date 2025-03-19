@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <h1>Welcome to My FastAPI Website</h1>
-  </body>
-</html>
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <h1>Welcome to Our Website</h1>
+  <p>Building future-ready solutions with the best technologies.</p>
+</section>
+
+<!-- Our Aim -->
+<section id="aim" class="section aim">
+  <h2>Our Aim</h2>
+  <p>We aim to provide the best web solutions using modern technologies.</p>
+</section>
+
+<!-- Works We Do -->
+<section id="works" class="section works">
+  <h2>Works We Do</h2>
+  <p>Web development, AI, and more.</p>
+</section>
+
+<!-- Stacks We Work With -->
+<section id="stacks" class="section stacks">
+  <h2>Stacks We Work With</h2>
+  <p>FastAPI, Jinja, CSS, and more.</p>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+{% endblock %}

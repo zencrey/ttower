@@ -12,26 +12,32 @@ html {
 .navbar {
   position: fixed;
   width: 100%;
-  background: linear-gradient(to right, #4a90e2, #7b4397);
+  background: black;
   color: white;
   padding: 10px 0;
   text-align: center;
   z-index: 1000;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .navbar .container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-right: 20px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .navbar ul li {
@@ -42,7 +48,7 @@ html {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 8px 8px;
   transition: 0.3s;
 }
 
@@ -65,7 +71,7 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: black;
   color: white;
 }
 
